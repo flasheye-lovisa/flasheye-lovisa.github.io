@@ -9,7 +9,7 @@
 - A simple lightweight cute kitten.
 
 [GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io/)
-[Get Started](#docsify)
+[Home](/)
 
 <!-- background color -->
 
