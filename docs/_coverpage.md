@@ -1,16 +1,15 @@
 <!-- _coverpage.md -->
 
-![logo](_media/kitten.png)
+![logo](_media/kitten.svg)
 
-# docsify <small>3.5</small>
+# Kitten <small>3.5</small>
 
 > A cute little kitten.
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- A simple lightweight cute kitten.
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io/)
+[Get Started](#docsify)
 
 <!-- background color -->
 
