@@ -13,7 +13,11 @@
   <div id="app">Please wait... While we prepare the documentation. :)</div>
   <script>
     window.$docsify = {
-      el: '#main'
+      loadSidebar: true,
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+    },
+    subMaxLevel: 2
     }
   </script>
   <!-- Docsify v4 -->
