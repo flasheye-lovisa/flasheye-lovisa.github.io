@@ -8,8 +8,8 @@
 
 - A simple lightweight cute kitten.
 
-[GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io/)
-[Home](/)
+[GitHub](https://github.com/docsifyjs/docsify/)
+[Get Started](#docsify)
 
 <!-- background color -->
 
