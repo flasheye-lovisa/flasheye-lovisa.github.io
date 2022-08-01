@@ -2,13 +2,12 @@
 
 ![logo](_media/flasheye_logo.png)
 
-# testing this <!-- [THIS IS A VERSION] <small>3.5</small> -->
+# Flasheye - Security Solution <small>1.0</small>
 
-> Testing this part.
+> User Guide for Surveillance and Alarms
 
-- Testing this part too.
-
+[Website](https://www.flasheye.se/)
 [GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io)
-[Get Started](/?id=docs-testgithubio)
+[Get Started](introduction)
 
-![color](#1b1e52)
+![color](#0A1226)
