@@ -16,7 +16,80 @@
      :root {
       --base-font-size: 14px;
       --theme-color   : #FF2C6D;
-     }
+
+      /* Cover #0A1226
+============================================================================= */
+    --cover-color                                      : ;
+    --cover-margin                                     : 0 auto;
+    --cover-max-width                                  : 40em;
+    --cover-text-align                                 : center;
+
+    /* Background */
+    --cover-background-blend-mode                      : ;
+    --cover-background-color                           : ;
+    --cover-background-image                           : url(_media/coverpage.png);
+    --cover-background-mask-color                      : var(--base-background-color);
+    --cover-background-mask-opacity                    : 0.4;
+    --cover-background-mask-visibility                 : ;
+    --cover-background-position                        : center center;
+    --cover-background-repeat                          : no-repeat;
+    --cover-background-size                            : cover;
+
+    /* Blockquote (Subtitle) */
+    --cover-blockquote-color                           : ;
+    --cover-blockquote-font-size                       : var(--font-size-l);
+
+    /* Buttons */
+    --cover-button-background                          : ;
+    --cover-button-background--hover                   : ;
+    --cover-button-border                              : 1px solid var(--theme-color);
+    --cover-button-border--hover                       : 1px solid #fafafa;
+    --cover-button-border-radius                       : var(--border-radius-m);
+    --cover-button-box-shadow                          : ;
+    --cover-button-box-shadow--hover                   : ;
+    --cover-button-color                               : var(--theme-color);
+    --cover-button-color--hover                        : #fafafa;
+    --cover-button-padding                             : 0.5em 2rem;
+    --cover-button-text-decoration                     : none;
+    --cover-button-text-decoration--hover              : ;
+    --cover-button-text-decoration-color               : ;
+    --cover-button-text-decoration-color--hover        : ;
+    --cover-button-transition                          : all var(2s) ease-in-out;
+
+    /* Buttons - Primary */
+    --cover-button-primary-background                  : var(--theme-color);
+    --cover-button-primary-background--hover           : #fff;
+    --cover-button-primary-border                      : 1px solid var(--theme-color);
+    --cover-button-primary-border--hover               : 1px solid var(--theme-color);
+    --cover-button-primary-box-shadow                  : ;
+    --cover-button-primary-box-shadow--hover           : ;
+    --cover-button-primary-color                       : #fff;
+    --cover-button-primary-color--hover                : var(--theme-color);
+    --cover-button-primary-text-decoration             : ;
+    --cover-button-primary-text-decoration--hover      : ;
+    --cover-button-primary-text-decoration-color       : ;
+    --cover-button-primary-text-decoration-color--hover: ;
+
+    /* Heading */
+    --cover-heading-color                              : var(--theme-color);
+    --cover-heading-font-size                          : var(--font-size-xxl);
+    --cover-heading-font-size-min                      : ;
+    --cover-heading-font-size-max                      : ;
+    --cover-heading-font-weight                        : normal;
+
+    /* Links */
+    --cover-link-border-bottom                         : ;
+    --cover-link-border-bottom--hover                  : ;
+    --cover-link-color                                 : ;
+    --cover-link-color--hover                          : ;
+    --cover-link-text-decoration                       : underline;
+    --cover-link-text-decoration--hover                : ;
+    --cover-link-text-decoration-color                 : ;
+    --cover-link-text-decoration-color--hover          : ;
+
+
+    --sidebar-transition-duration                 : var(--duration-medium);
+    }
    </style>
 </head>
 <body>
@@ -33,7 +106,7 @@
       loadNavbar: true,
       mergeNavbar: true,
       maxLevel: 4,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       name: 'Flasheye',
       repo: 'https://github.com/flasheye-lovisa/flasheye-lovisa.github.io',
 

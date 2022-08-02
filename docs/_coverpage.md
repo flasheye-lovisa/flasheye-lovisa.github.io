@@ -8,6 +8,10 @@
 
 [Website](https://www.flasheye.se/)
 [GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io)
-[Get Started](introduction)
+[Get Started](_content/1_introduction)
 
-![color](#0A1226)
+<!-- This is the marineblue color of Flasheye -->
+<!--![color](#0A1226)-->
+
+<!-- background image -->
+![](_media/coverpage.png)
