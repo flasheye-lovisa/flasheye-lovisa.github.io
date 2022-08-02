@@ -1,13 +1,4 @@
 # Flasheye
 
-> Safer and smarter with 3D LiDAR monitoring
+The purpose of this user guide is to help partners and customers with the installation, configuration, and maintenance of smart 3D monitoring with 3D LiDAR sensors, including alarm reporting and presentation. This user guide describes Flasheye’s security solution; what is included in the solution, how the solution works, practical instructions for getting started, and integration with video management systems.
 
-*A bunch of text I copied from the website.*
-
-I don't know what to put here.
-
-<!-- Lägg in support-titel -->
-Democratization in our case means to make the technology accessible for almost anybody, not just for specialists or engineers. Without democratization of the technology, the implementation of the technology would take very long time. The same goes for the advantages for people in the world that comes along with implementation like better sustainability, increased safety and improved utilization of existing investments.
-
-Ulf Lindström
-CEO and founder, Flasheye
