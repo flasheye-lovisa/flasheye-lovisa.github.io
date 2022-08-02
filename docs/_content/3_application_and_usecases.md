@@ -5,7 +5,9 @@
 ## Intruder tracking 
 The LiDAR data is used to generate a 3D model, a point cloud, that makes it possible to track and detect moving objects in the sensor’s field of vision. This is done by grouping points together in clusters that appear to belong together based on mathematical rules. The dynamic point clusters are constantly updated by comparing the point cloud (usual sensor refresh being 10-20Hz) to the static environment that is first saved as a reference. In the event of brief disturbances, the tracked objects are kept in memory in order to be able to preserve unique objects with their own ID code, and to quickly capture previously discovered objects that are most likely the same objects.
 
-![Tracking different areas](../_media/3_aauc_pic1.png "LiDAR can be used for tracking, like trucks at a delivery centre.")
+<p align="center">
+  <img src="../_media/3_aauc_pic1.png" />
+</p>
 
 ## Recognition of people and vehicles
 To reduce the occurrence of false alarms, the solution understands each situation, where the central part is to be able to detect and distinguish the most common objects, for example people and vehicles. This is done through a combination of rule-based detection (recognizing motion and size) and supervised AI using LiDAR’s 2D projection output. This makes object recognition more accurate since point cloud analysis with LiDAR and neural network analysis of 2D images have different properties and advantages. It is also possible to set the analysis sensitivity depending on what information is most important to obtain.
@@ -26,7 +28,9 @@ Once an object has been discovered and tracked, it needs to be continuously trac
 ## Free escape routes and exits
 Another application for safety in buildings and industrial facilities is to receive warnings if escape routes are obscured or blocked. This is done by saving a reference image of what the environment should look like in the desired case. Then you can allow people to move within the area, but if something is left in the escape routes and exits for a configurable amount of time, an alarm is generated. 
 
-![Intrusion detection](../_media/3_aauc_pic2.png "LiDAR can also be used for live intruder detection.")
+<p align="center">
+  <img src="../_media/3_aauc_pic2.png" />
+</p>
 
 ## Detect potentially dangerous objects
 In highly populated areas, such as airports, it can be a danger if objects are left unattended. This can be quickly detected by people being tracked and compared to the saved reference image. This function together with the PTZ camera could quickly provide information about the situation where an operator can determine whether something deviating appears with the left object.  
@@ -34,4 +38,4 @@ In highly populated areas, such as airports, it can be a danger if objects are l
 ## Masking out disturbing trees and other vegetation
 To reduce the risk of false alarms, you can create virtual masking boxes, in areas where you want to ignore movements such as swaying tree branches, shrubs and other moving vegetation. The same applies to windows where reflections could cause mirrored copies of real objects. This is a great solution for any unique environment that may have different movements that may be misunderstood as important changes. In the LiDAR sensor's field of view, you can have as many virtual 3D boxes and masking boxes as you need, which enables an active monitoring that suits the environment. The same functionality (masking out areas that should be ignored) can be used to restrict monitoring to a specific area within the broad field of view of the sensor, e.g., a small enclosed garden. 
 
-![Gardenesque picture](../_media/3_aauc_pic3.png "The software can also choose to ignore certain areas because of vegetation.")
+![Gardenesque picture](../_media/3_aauc_pic3.jpg "The software can also choose to ignore certain areas because of vegetation.")

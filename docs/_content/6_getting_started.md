@@ -62,15 +62,21 @@ The LPU is connected with a normal ethernet cable to a PoE injector, which in tu
 
 2.	Install a M16 cable gland (vented unit supplied) and route an ethernet cable (not supplied) through it (marked “LIDAR” on the LPU)
 
-![Ninth pic, ch 6](../_media/6_gs_pic7.jpg "M16 cable gland for LPU.")
+<p align="center">
+  <img src="../_media/6_gs_pic7.jpg" />
+</p>
 
 3.	Mount an 8-wire RJ45 connector on the cable and then connect the cable to ethernet port 1 on the main control unit (Karbon K400 series). The other end of this cable is then connected to the data port of the supplied PoE injector. Port 2 on the main control unit is pre-connected to the external ethernet connector (internet/Milestone connection, DHCP) according to the picture below
 
-![Tenth pic, ch 6](../_media/6_gs_pic8.png "Overview of the cable set-up.")
+<p align="center">
+  <img src="../_media/6_gs_pic8.png" />
+</p>
 
 __OPTIONAL__: The 4G port can optionally be used for redundant internet connection with a N-type antenna (not included) and a micro-SIM card (not included) installed into the K400 unit as pictured. For more information, please contact support@flasheye.se.
 
-![Eleventh pic, ch 6](../_media/6_gs_pic9.png "The red arrow shows how the micro-SIM car should be inserted.")
+<p align="center">
+  <img src="../_media/6_gs_pic9.png" />
+</p>
 
 ### 2. Flasheye LiDAR Processing Unit (LPU) power
 1.	Connect a power cable to the power connector by pushing it in (keyed) and rotating it until the latch clicks. To open, pull on the metal latch and rotate.
@@ -88,13 +94,17 @@ __OPTIONAL__: The 4G port can optionally be used for redundant internet connecti
 
 3.	Mount an 8-wire RJ45 connector (not supplied) on the LiDAR cable pigtail with standard B-type color coding and connect it to the DATA port. Connect the pigtail power cables on the PoE splitter terminal block position V1 + and - (Red pigtail wire = +24VDC, Black pigtail wire = 0VDC). The purple and yellow wires can be ignored and cut.
 
-![Thirteenth pic, ch 6](../_media/6_gs_pic11.png "Cable guide.")
+<p align="center">
+  <img src="../_media/6_gs_pic11.png" />
+</p>
 
 4.	Connect your PoE cable (further connected to the supplied PoE injector and then finally the LPU) to the PoE IN port on the splitter and ground the sheath to the ground screw on the splitter unit. Check that the POWER and ACTIVE LEDs are green on the PoE injector and that the PWR LED is amber on the PoE splitter. 
 
 5.	The Dual-Lock Velcro tape holding the unit can be released for easier access to the ethernet ports during installation.
 
-![Fourteenth pic, ch 6](../_media/6_gs_pic12.png "Dual-Lock velcro holding the unit.")
+<p align="center">
+  <img src="../_media/6_gs_pic12.png" />
+</p>
 
 ### 4. Ouster LiDAR sensor
 
@@ -126,11 +136,16 @@ The system is ready for further configuration after it has been powered up and c
 
 7.	Check that the update slider in the lower right corner has the expected effect on the point cloud update rate on the browser view. Select an update rate that seems appropriate for the network connection speed available.
 
-![Fifteenth pic, ch 6](../_media/6_gs_pic13.png "Configuration settings.")
+<p align="center">
+  <img src="../_media/6_gs_pic13.png" />
+</p>
 
 8.	Click on the menu button in the upper right corner, enter the status view and confirm that Unit health, ROS status and sensor health are in the green.
 
-![Sixteenth pic, ch 6](../_media/6_gs_pic14.png "Make sure there are no deviations.")
+<p align="center">
+  <img src="../_media/6_gs_pic14.png" />
+</p>
+
 
 ### 2. Sensor placement
 
@@ -144,7 +159,9 @@ __Before starting the configuration:__
 
 1.	Click on the blue spawn box that represents the LiDAR sensor origin with the coordinate system arrows to create a new virtual 3D box.
 
-![Seventeenth pic, ch 6](../_media/6_gs_pic15.png "The blue box is the LiDAR sensor origin.")
+<p align="center">
+  <img src="../_media/6_gs_pic15.png" />
+</p>
 
 2.	Move and rotate the newly created virtual box to its desired position by using the direction arrows and orbits around it. There are two ways of configuring the monitoring: 
 
@@ -154,19 +171,27 @@ __Before starting the configuration:__
 
     > For the tracking function combined with PTZ cameras, alternative 1 is most suitable. Move the virtual 3D box to the areas that should be masked out. Right click on the box to select the mask out function and mask out areas that can cause false tracked objects, such as swaying trees and bushes, and reflecting windows.
 
-![Eighteenth pic, ch 6](../_media/6_gs_pic16.png "Resize, move and observe the hit-boxes in the coordinate system.")
+<p align="center">
+  <img src="../_media/6_gs_pic16.png" />
+</p>
 
 3.	Right click the virtual box and select resize. Use the arrows to resize the virtual box to desired size. If you use the mask out function, ensure that there are no points outside the area if interest. Note: Using the resize function with the current software version may require setting the update interval temporarily to a low value if bandwidth congestion causes erratic movement. 
 
-![Nineteenth pic, ch 6](../_media/6_gs_pic17.png "Right-click for additional settings.")
+<p align="center">
+  <img src="../_media/6_gs_pic16.png" />
+</p>
 
-![Twentieth pic, ch 6](../_media/6_gs_pic18.png)
+<p align="center">
+  <img src="../_media/6_gs_pic17.png" />
+</p>
 
 4.	__About tracking__
 The real-time object tracking functionality is always running and providing a list of detected objects. The tracking is based on finding dynamic objects that differ from the static reference that is collected during start-up or on demand.
 Update of the static reference is done on demand by pressing the button “Update reference point cloud for tracking” in the tracking submenu. First input a number of scans that are to be taken to build the reference. At typical scanning frequency, 10 scans are taken each second so 50-100 is a suitable range. When the number of scans remaining reaches 0, the reference is complete. Avoid having anything moving in the scene during the reference taking, as this could cause “phantom” tracked objects to appear.
 
-![Twentioneth pic, ch 6](../_media/6_gs_pic19.png)
+<p align="center">
+  <img src="../_media/6_gs_pic19.png" />
+</p>
 
 Objects inside the masked areas are not tracked as the point cloud is not updated within these areas. It is good practice to mask out areas that would generate a lot of false tracked objects, such as swaying trees. Windows that create reflections can also cause phantom copies of actual objects to appear.
 
@@ -209,7 +234,9 @@ Remember to save changes every time you add, edit, or delete virtual boxes!
 7.	View settings
 In addition to the slider in the lower right corner that can adjust the point cloud view update rate, you also have the possibility to adjust the point cloud viewing parameters from the View tab in the upper right menu. You can select the false coloring colormap and signal field, reverse the colormap or adjust point size. Click on the “Update view settings” button to apply changes. 
 
-![Twentisecond pic, ch 6](../_media/6_gs_pic20.png "Log view")
+<p align="center">
+  <img src="../_media/6_gs_pic20.png" />
+</p>
 
 8.	Logging
 You can enter a logging view through the menu by selecting Log. The Alarm tab shows a real-time update of all alarms that are being reported. The Rosout tab shows a low-level information stream that can be useful for debugging purposes or gathering more detailed data about what is happening in the system. 
