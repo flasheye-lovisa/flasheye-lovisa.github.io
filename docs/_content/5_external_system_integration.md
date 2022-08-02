@@ -5,7 +5,9 @@
 ## Milestone
 Flasheye security solution is integrated with Milestone video management system for surveillance operation. Partners and customers can integrate Flasheye security system with Milestone and use Milestone’s product suite and solutions for operation, monitoring, presentation and configuration of the Flasheye’s applications. Milestone Systems is one of the leading providers of open platform video management software.
 
-![Milestone Logo](../_media/5_esi_pic1_logo.png "Milestone is a video management system.")
+<p align="center">
+  <img src="../_media/5_esi_pic1_logo.png" />
+</p>
 
 ## MQTT
 Flasheye Security solution delivers sensor data and sensor intelligence for real-time alerts, point-cloud data etc. through a well-defined interface, based on MQTT. The MQTT topics and messages are specified by Flasheye and the MQTT API is secured and supports MQTT over TLS, authentication mechanisms, tokens and encryption. 

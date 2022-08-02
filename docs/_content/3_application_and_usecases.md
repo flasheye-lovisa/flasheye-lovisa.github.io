@@ -34,4 +34,4 @@ In highly populated areas, such as airports, it can be a danger if objects are l
 ## Masking out disturbing trees and other vegetation
 To reduce the risk of false alarms, you can create virtual masking boxes, in areas where you want to ignore movements such as swaying tree branches, shrubs and other moving vegetation. The same applies to windows where reflections could cause mirrored copies of real objects. This is a great solution for any unique environment that may have different movements that may be misunderstood as important changes. In the LiDAR sensor's field of view, you can have as many virtual 3D boxes and masking boxes as you need, which enables an active monitoring that suits the environment. The same functionality (masking out areas that should be ignored) can be used to restrict monitoring to a specific area within the broad field of view of the sensor, e.g., a small enclosed garden. 
 
-![Gardenesque picture](../_media/3_aauc_pic3.png "The software can also choose to ignore certain areas because of vegetation.")  
+![Gardenesque picture](../_media/3_aauc_pic3.png "The software can also choose to ignore certain areas because of vegetation.")
