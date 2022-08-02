@@ -33,7 +33,7 @@ IP65-classed LPU (when special cable gland is fitted over RJ45 connector) - Flas
 | ![LiDAR sensor](../_media/6_gs_pic4.png) |
 |:--:|
 | <b>LiDAR sensor
-Ouster OS1-32 below horizon and cable with cable gland
+Ouster sensor and cable with cable gland
 </b>|
 
 | ![PoE++ splitter box](../_media/6_gs_pic5.png) |

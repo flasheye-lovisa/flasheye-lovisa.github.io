@@ -7,8 +7,9 @@
 > User Guide for Surveillance and Alarms
 
 [Website](https://www.flasheye.se/)
-[GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io)
 [Get Started](_content/1_introduction)
+
+<!-- [GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io) -->
 
 <!-- This is the marineblue color of Flasheye -->
 <!--![color](#0A1226)-->
