@@ -1,13 +1,13 @@
-# A lousy guide to how I failed - and solved, docsify
+# A guide to launch your own docsify-page
 
 ## Installation
 
-Installing `docsify-cli` helps locally launch the site, good for previewing:
+Install `docsify-cli` through your desired terminal, this helps locally launch the site, good for previewing:
 ```bash
 npm i docsify-cli -g 
 ```
 
-Then, create a github-pages where you want your website to be. I followed [this](https://docs.github.com/en/pages/quickstart) guide and stopped at step 3 (included). I still don't know how to actually launch an existing page, only locally.
+Then, create a github-pages where you want your website to be. I followed [this](https://docs.github.com/en/pages/quickstart) guide and stopped at step 3 (included). I still don not know how to actually launch an existing page, only locally.
 
 If you do not have `npm` installed, you can do it [here](https://nodejs.org/en/download/). To confirm the installation of both Node and NPM:
 ```bash
@@ -16,7 +16,7 @@ npm -v
 ```
 
 ## Initialization (taken from [here](https://docsify.js.org/#/quickstart?id=initialize))
-To initialize the needed startfiles:
+To initialize the needed startfiles for docsify to work:
 ```bash
 docsify init ./docs
 ```
@@ -36,16 +36,95 @@ The `index.html`-file that I have, looks like this:
    <meta name="This is a description..." content="">
    <Flasheye></title>
 
-   <!-- Themes (light + dark) -->
-   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+   <!-- Theme dark -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+
+   <!-- Uncomment these 2 lines of code to adjust the theme (dark/light) to the settings of the user's media-theme -->
+   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">-->
+   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">-->
 
    <!-- Custom Styles -->
    <style>
      :root {
       --base-font-size: 14px;
       --theme-color   : #FF2C6D;
-     }
+
+      /* Background behind brödtext: #283339, sidebar: 242E33 */
+      /* Searchbar-color: 1F282D, Text is #fafafa, search-wordtext: 556F81
+
+      /* Cover #0A1226
+============================================================================= */
+    --cover-color                                      : ;
+    --cover-margin                                     : 0 auto;
+    --cover-max-width                                  : 40em;
+    --cover-text-align                                 : center;
+
+    /* Background */
+    --cover-background-blend-mode                      : ;
+    --cover-background-color                           : ;
+    --cover-background-image                           : url(_media/coverpage.png);
+    --cover-background-mask-color                      : var(--base-background-color);
+    --cover-background-mask-opacity                    : 0.4;
+    --cover-background-mask-visibility                 : ;
+    --cover-background-position                        : center center;
+    --cover-background-repeat                          : no-repeat;
+    --cover-background-size                            : cover;
+
+    /* Blockquote (Subtitle) */
+    --cover-blockquote-color                           : ;
+    --cover-blockquote-font-size                       : var(--font-size-l);
+
+    /* Buttons */
+    --cover-button-background                          : ;
+    --cover-button-background--hover                   : ;
+    --cover-button-border                              : 1px solid var(--theme-color);
+    --cover-button-border--hover                       : 1px solid #fafafa;
+    --cover-button-border-radius                       : var(--border-radius-m);
+    --cover-button-box-shadow                          : ;
+    --cover-button-box-shadow--hover                   : ;
+    --cover-button-color                               : var(--theme-color);
+    --cover-button-color--hover                        : #fafafa;
+    --cover-button-padding                             : 0.5em 2rem;
+    --cover-button-text-decoration                     : none;
+    --cover-button-text-decoration--hover              : ;
+    --cover-button-text-decoration-color               : ;
+    --cover-button-text-decoration-color--hover        : ;
+    --cover-button-transition                          : all var(2s) ease-in-out;
+
+    /* Buttons - Primary */
+    --cover-button-primary-background                  : var(--theme-color);
+    --cover-button-primary-background--hover           : #fff;
+    --cover-button-primary-border                      : 1px solid var(--theme-color);
+    --cover-button-primary-border--hover               : 1px solid var(--theme-color);
+    --cover-button-primary-box-shadow                  : ;
+    --cover-button-primary-box-shadow--hover           : ;
+    --cover-button-primary-color                       : #fff;
+    --cover-button-primary-color--hover                : var(--theme-color);
+    --cover-button-primary-text-decoration             : ;
+    --cover-button-primary-text-decoration--hover      : ;
+    --cover-button-primary-text-decoration-color       : ;
+    --cover-button-primary-text-decoration-color--hover: ;
+
+    /* Heading */
+    --cover-heading-color                              : var(--theme-color);
+    --cover-heading-font-size                          : var(--font-size-xxl);
+    --cover-heading-font-size-min                      : ;
+    --cover-heading-font-size-max                      : ;
+    --cover-heading-font-weight                        : normal;
+
+    /* Links */
+    --cover-link-border-bottom                         : ;
+    --cover-link-border-bottom--hover                  : ;
+    --cover-link-color                                 : ;
+    --cover-link-color--hover                          : ;
+    --cover-link-text-decoration                       : underline;
+    --cover-link-text-decoration--hover                : ;
+    --cover-link-text-decoration-color                 : ;
+    --cover-link-text-decoration-color--hover          : ;
+
+
+    --sidebar-transition-duration                 : var(--duration-medium);
+    }
    </style>
 </head>
 <body>
@@ -62,12 +141,10 @@ The `index.html`-file that I have, looks like this:
       loadNavbar: true,
       mergeNavbar: true,
       maxLevel: 4,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       name: 'Flasheye',
-      // repo: ... loads a little triangle on the top of the page to the github linked
-      repo: 'https://github.com/flasheye-lovisa/flasheye-lovisa.github.io',
-    
-      //Loads a search-bar, only available in english atm  
+      // repo: 'https://github.com/flasheye-lovisa/flasheye-lovisa.github.io',
+
       search: {
         noData: {
           //'/es/': '¡No hay resultados!', If there is no results
@@ -98,11 +175,13 @@ The `index.html`-file that I have, looks like this:
 </body>
 </html>
 ``` 
-And this one can handle the most basic things. It has a sidebar, with links to the Github, autoscrolls to the top when clicking a topic/chapter, etc.
+The many lines of code with a preceeded: /* Cover, is just for customization of the colors, the buttons behavior and appearance. 
 
-The configuration-guide for docsify is much longer than this but I did not understand a half of it so I omitted it and it has worked out great.
+This index-file has configuration of the most basic things. It has a sidebar, has a good layout of how the content is presented and autoscrolls to the top when clicking a topic/chapter, etc. It is possible to add a GitHub-link at the top of the page's corner, see line 144 (commented).
 
-Then, in the docs-folder, add a `_coverpage.md` and `_sidebar.md` file.
+The configuration-guide for docsify is much longer than this but I did not understand half of it so I omitted it and it has worked out great.
+
+Then, in the current folder (docs), add a `_coverpage.md` and `_sidebar.md` file.
 
 ### `_coverpage.md`
 > You can name it something else, but then you have to change the `index`-file. Instead of `coverpage = true` it should be `coverpage = 'coverpagefile.md'`
@@ -126,11 +205,14 @@ Then, in the docs-folder, add a `_coverpage.md` and `_sidebar.md` file.
 [GitHub](https://github.com/flasheye-lovisa/flasheye-lovisa.github.io)
 [Get Started](introduction)
 
-<!-- This is the color-theme of the coverpage, the background -->
+<!-- This is the color-theme of the coverpage, the background. Like an accent color.-->
+<!-- Can be written in both HEX and rgb :) -->
 ![color](#0A1226)
 ```
 
-Note the `Get Started`-line. In the parenthesis there are a crossreference to the introduction in the site. The local path for the homepage (where the `Get Started` button is located), is http://localhost:3000/#/ and for the introduction it is http://localhost:3000/#/introduction, therefore the path should just be 'introduction'.
+Note the `Get Started`-line. In the parenthesis there are a crossreference to the introduction in the site. The local path for the homepage (where the `Get Started` button is located) is in the docs folder, which is http://localhost:3000/#/ and for the introduction it is http://localhost:3000/#/introduction, therefore the path should just be 'introduction'.
+
+That means, that if the introduction is in another folder, relative to the docs-folder, the path would change to http://localhost:3000/#/folder/introduction. 
 
 ### `_sidebar.md`
 > As said above, it could be changed to something else but then in `index`, the line `loadSidebar = true` has to be changed to `loadSidebar = 'sidebarfile.md'`
@@ -144,6 +226,15 @@ Note the `Get Started`-line. In the parenthesis there are a crossreference to th
 * [Chapter 4](path/to/file4.md "Text about file4")
 ```
 Every time you add a new chapter, it has to be added in this file or else it won't show on the docsify-site.
+
+## Additional pages
+To create a new page/chapter/section in the sidebar, create a new Markdown-file somehere within the `docs`-folder and add its path to the `_sidebar.md` file. Then, editing the markdown-file is exactly the same. If you are not familiar with markdown-syntax, [here you go](https://www.markdownguide.org/basic-syntax/). 
+
+When adding any header in the markdown-file, it will always be included in the sidebar if not specified. To specify level-depth, edit the `subMaxLevel`, see line 142.
+
+To see fuller and better explanation of the configuration-settings, see the official documentation [here](https://docsify.js.org/#/configuration).
+
+
 
 
 
