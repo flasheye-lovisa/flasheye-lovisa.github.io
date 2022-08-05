@@ -1,5 +1,8 @@
 # A guide to launch your own docsify-page
 
+<!-- Author: Lovisa Sjöberg. This document contains line-references, keep that in mind when editing -->
+<!-- Version: 1.0 (2022-08-05) -->
+
 ## Installation
 
 Install `docsify-cli` through your desired terminal, this helps locally launch the site, good for previewing:
@@ -177,7 +180,7 @@ The `index.html`-file that I have, looks like this:
 ``` 
 The many lines of code with a preceeded: /* Cover, is just for customization of the colors, the buttons behavior and appearance. 
 
-This index-file has configuration of the most basic things. It has a sidebar, has a good layout of how the content is presented and autoscrolls to the top when clicking a topic/chapter, etc. It is possible to add a GitHub-link at the top of the page's corner, see line 144 (commented).
+This index-file has configuration of the most basic things. It has a sidebar, has a good layout of how the content is presented and autoscrolls to the top when clicking a topic/chapter, etc. It is possible to add a GitHub-link at the top of the page's corner, see line 149 (commented).
 
 The configuration-guide for docsify is much longer than this but I did not understand half of it so I omitted it and it has worked out great.
 
@@ -230,11 +233,26 @@ Every time you add a new chapter, it has to be added in this file or else it won
 ## Additional pages
 To create a new page/chapter/section in the sidebar, create a new Markdown-file somehere within the `docs`-folder and add its path to the `_sidebar.md` file. Then, editing the markdown-file is exactly the same. If you are not familiar with markdown-syntax, [here you go](https://www.markdownguide.org/basic-syntax/). 
 
-When adding any header in the markdown-file, it will always be included in the sidebar if not specified. To specify level-depth, edit the `subMaxLevel`, see line 142.
+When adding any header in the markdown-file, it will always be included in the sidebar if not specified. To specify level-depth, edit the `subMaxLevel`, see line 147.
 
 To see fuller and better explanation of the configuration-settings, see the official documentation [here](https://docsify.js.org/#/configuration).
 
+Docsify will handle the Markdown files smoothly, meaning, writing a good markdown file will essentially result in a nice page on docsify.
 
+Using images in the Markdown files is just the same, although on the docsify page the images would look better centered. To help with this, use HTML. I centered almost all of the pictures with this:
+
+```html
+<p align="center">
+  <img src="source/path/to/image.png" />
+</p>
+```
+
+## Deploying the page
+This repo is deployed via [netlify.com](https://www.netlify.com/). A good how to deploy via netlify, or some other platform is [here](https://docsify.js.org/#/deploy).
+
+The big guide on how to use docsify is on their official [site](https://docsify.js.org/#/), and is __encouraged__ to use. This acts mostly like a compliment to the guide where I, myself, got stuck. 
+
+Hope this guide finds you helpful!
 
 
 
